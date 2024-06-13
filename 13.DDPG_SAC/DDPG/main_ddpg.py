@@ -21,6 +21,7 @@ if __name__ == '__main__':
     load_checkpoint = True#False
     if load_checkpoint:
         agent.load_models()
+        env.reset()
         env.render(mode='human')
         n_games = 10
 
